@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery day 3</title>
+    </head>
+    <body>
+        <p id="p1">welcome to <b>jQuery</b> </p>
+
+        <p id="p2">Hello <span style="color: red;">World! </span> </p>
+
+        <button id="text">Show me text</button>
+        <button id="html"> Show me html</button>
+
+        <!-- <button>Animate</button>
+
+<div  id="div1" style="height: 300px; width: 200px;  ;border: 1px solid red; position:absolute ;background-color:red">
+
+    <h1 >jQuery</h1> 
+</div> -->
+        <!-- <p id="p">wlc to my jquery</p> -->
+
+        <!-- for stop  and slidedown functin -->
+        <!-- <button id="start" style="padding: 10px; margin-right: 20px;">start down</button>
+<button id="stop"  style="padding: 10px;">stop down</button>
+ 
+<div id="div2" style="height: 300px; width: 200px; font-size: 25px ;background-color:red;display: none;">
+
+   
+</div> -->
+        <!-- <button id="start" style="padding: 10px; margin-right: 20px;">start down</button> -->
+        <!-- <button id="stop"  style="padding: 10px;">stop down</button> -->
+        <!-- <div id="div2" style="height: 300px;text-align: center; width: 200px; font-size: 25px ;background-color:red;display: none;">
+
+   <h1 style="background-color: yellow ;width: 50px; height: auto; position: relative;"> js</h1>
+</div> -->
+        <script src="./jquery-3.6.0.min.js"></script>
+        <script>
+    $(document).ready(function(){
+
+        // for multipal properties
+// $('button').click(function()
+// {
+// $('#div1').animate({
+//     left:'200px',
+//     opacity:'0.3',
+//     height:'300px',
+//     width:'200px',
+// })
+// })
+
+// add properties values
+// $('button').click(function()
+// {
+// $('#div1').animate({
+//     left:'200px',
+//     opacity:'0.3',
+//     height:'-=10px',
+//     width:'+=50px',
+// })
+// })
+
+// use queue functions
+// $('button').click(function(){
+//     var div=$('div');
+// div.animate({height:'150px',opacity:'0.4'},'slow');
+// div.animate({ width:'200px',opacity:'0.4'},'slow')
+// div.animate({height:'50px',opacity:'0.4'},'slow');
+// div.animate({ width:'150px',opacity:'0.4'},'slow')
+// });
+
+
+// text movement
+// $('button').click(function(){
+//     var div=$('div');
+// div.animate({left:'100px',},'slow');
+// div.animate({ fontSize:'30px',width:'200px'},'slow')
+// });
+
+
+// $('#start').click(function(){
+//     $('#div2').slideDown(6000);
+// });
+// $('#stop').click(function(){
+//     $('#div2').stop();
+// });
+
+// $('button').click(function(){
+//     $("div").hide("slow",function(){
+// alert('the div is hidden');
+//     });
+// });
+
+// call back function
+
+// $('button').click(function(){
+//     $("div").hide("2000");
+// alert('the div is hidden');
+    
+// });
+
+
+// chaining function
+// $('#start').click(function(){
+//     $('#div2').show(),
+//     $('#div2 h1').animate({left:'150px'}),
+   
+// $('#div2 h1').css("color","blue").slideUp(2000).slideDown(2000);
+// });
+
+// text and html content 
+
+$('#text').click(function()
+{
+alert("Text: " +$("#p1").text());
+
+})
+$('#html').click(function()
+{
+alert("Text: " +$("#p1").html());
+})
+
+
+
+
+    });
+    </script>
+    </body>
+</html>
